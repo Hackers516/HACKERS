@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Signup Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			margin: 50px auto;
+			width: 500px;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+
+		h1 {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		input[type=text], input[type=password], input[type=email] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+
+		button[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+
+		button[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+		.signup {
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		.signup a {
+			color: #4CAF50;
+			text-decoration: none;
+		}
+
+		.signup a:hover {
+			text-decoration: underline;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Signup</h1>
+		<form action="" method="post">
+			<label for="username">Username</label>
+			<input type="text" id="username" name="username" placeholder="Enter your username">
+
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email">
+
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" placeholder="Enter your password">
+
+			<label for="confirm_password">Confirm Password</label>
+			<input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password">
+
+			<button type="submit">Signup</button>
+		</form>
+
+		<div class="signup">
+			<p>Already have an account? <a href="index.html">Login here</a></p>
+		</div>
+	</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WhatsApp Button Example</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+			padding: 0;
+		}
+
+		.whatsapp-button {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			z-index: 9999;
+		}
+
+		.whatsapp-button a {
+			display: inline-block;
+			background-color: #25D366;
+			color: #fff;
+			padding: 10px;
+			border-radius: 50%;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+			text-decoration: none;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.whatsapp-button a:hover {
+			background-color: #128C7E;
+			transform: scale(1.1);
+		}
+
+		.whatsapp-button a i {
+			font-size: 1px;
+			line-height: 1;
+			margin-right: 3px;
+		}
+
+		.whatsapp-button a span {
+			display: none;
+		}
+
+		@media screen and (max-width: 768px) {
+			.whatsapp-button {
+				bottom: 60px;
+				right: 15px;
+			}
+
+			.whatsapp-button a span {
+				display: inline-block;
+				margin-left: 1px;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="whatsapp-button">
+		<a href="https://wa.me/+923127635516" target="_blank">
+			<i class="fab fa-whatsapp"></i>
+			<span>WhatsApp</span>
+		</a>
+	</div>
+
+	<!-- Font Awesome CDN for WhatsApp icon -->
+	<script src="https://kit.fontawesome.com/1234567890.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
